@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>XCOP Coin</title>
+<style>
+body{
+  margin:0;
+  background:#0f1220;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+#coin{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:gold;
+  margin:120px auto;
+  box-shadow:0 0 30px gold;
+  cursor:pointer;
+  transition:transform 0.1s;
+}
+#coin:active{
+  transform:scale(0.9);
+}
+#count{
+  font-size:28px;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>XCOP COIN</h1>
+<div id="coin"></div>
+<div id="count">0</div>
+
+<script>
+let coin = 0;
+document.getElementById("coin").onclick = () => {
+  coin++;
+  document.getElementById("count").innerText = coin;
+};
+</script>
+
+</body>
+</html>
